@@ -1,0 +1,32 @@
+/* CSS cho trang Lịch trình - Phiên bản đơn giản cho người mới bắt đầu */
+
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Khối bao quanh bảng (Table Container) */
+.table-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 50px;
+    border: 1px solid #dee2e6;
+}
+
+/* Tiêu đề chính */
+h2.text-primary {
+    color: #007bff !important; /* Màu xanh Bootstrap */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Chữ in đậm và màu xám */
+.fw-bold.text-secondary {
+    color: #6c757d !important;
+    font-weight: bold;
+}
+
+/* Lưu ý: Bạn có thể sử dụng các class của Bootstrap trong file HTML 
+để làm bảng đẹp hơn mà không cần viết thêm CSS phức tạp. */
