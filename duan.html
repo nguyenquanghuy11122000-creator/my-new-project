@@ -1,83 +1,722 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aura Fashion - Bootstrap Version</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="css/duan.css">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="css/duan.css" />
+  </head>
+  <body>
     <!--menu -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">QUANG HUY FASHION<span>.</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#">Trang Chủ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Bộ Sưu Tập</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Nữ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Nam</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Liên Hệ</a></li>
-                </ul>
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">QUANG HUY FASHION<span>.</span></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#">Trang Chủ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Quần Jean</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Áo</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Giày Dép</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Áo Khoác</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Liên Hệ</a></li>
+          </ul>
+
+          <form
+            class="d-flex ms-lg-4 mt-3 mt-lg-0"
+            role="search"
+            style="max-width: 350px; width: 100%"
+          >
+            <div class="input-group">
+              <input
+                class="form-control rounded-start-pill border-end-0 shadow-none px-3"
+                type="search"
+                placeholder="Tìm kiếm sản phẩm..."
+                aria-label="Search"
+                style="border-color: #dee2e6"
+              />
+              <button
+                class="btn btn-outline-secondary bg-white border-start-0 rounded-end-pill px-3"
+                type="submit"
+                style="border-color: #dee2e6"
+              >
+                <i class="bi bi-search text-dark"></i>
+              </button>
             </div>
-            <div class="nav-icons d-none d-lg-flex">
-                <a href="#"><i class="bi bi-search"></i></a>
-                <a href="#"><i class="bi bi-person"></i></a>
-                <a href="#"><i class="bi bi-bag"></i></a>
-            </div>
+          </form>
         </div>
+        <div class="nav-icons d-none d-lg-flex ms-3">
+          <a href="#"><i class="bi bi-person"></i></a>
+          <a href="#"><i class="bi bi-bag"></i></a>
+        </div>
+      </div>
     </nav>
 
     <!-- dieu huong -->
-    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+    <div
+      id="heroCarousel"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide-to="2"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://owen.cdn.vccloud.vn/media/codazon/slideshow/t/o/topbanner19.jpg"
+            alt="Fashion 1"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <span class="caption-subtitle">Summer Collection 2026</span>
+            <h2 class="caption-title">Hòa Nhịp Cùng<br />Nắng Vàng</h2>
+            <a href="#" class="btn btn-aura">Mua Ngay</a>
+          </div>
         </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://owen.cdn.vccloud.vn/media/codazon/slideshow/t/o/topbanner19.jpg" alt="Fashion 1">
-                <div class="carousel-caption d-none d-md-block">
-                    <span class="caption-subtitle">Summer Collection 2026</span>
-                    <h2 class="caption-title">Hòa Nhịp Cùng<br>Nắng Vàng</h2>
-                    <a href="#" class="btn btn-aura">Mua Ngay</a>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="https://owen.cdn.vccloud.vn/media/codazon/slideshow/t/o/topbanner20.jpg" alt="Fashion 2">
-                <div class="carousel-caption d-none d-md-block">
-                    <span class="caption-subtitle">Modern Chic</span>
-                    <h2 class="caption-title">Tự Tin Tỏa Sáng<br>Mỗi Ngày</h2>
-                    <a href="#" class="btn btn-aura">Khám Phá</a>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="https://owen.cdn.vccloud.vn/media/codazon/slideshow/t/o/topbanner18.jpg" alt="Fashion 3">
-                <div class="carousel-caption d-none d-md-block">
-                    <span class="caption-subtitle">Luxury Label</span>
-                    <h2 class="caption-title">Đẳng Cấp<br>Thời Trang Pháp</h2>
-                    <a href="#" class="btn btn-aura">Xem Thêm</a>
-                </div>
-            </div>
+        <div class="carousel-item">
+          <img
+            src="https://owen.cdn.vccloud.vn/media/codazon/slideshow/t/o/topbanner20.jpg"
+            alt="Fashion 2"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <span class="caption-subtitle">Modern Chic</span>
+            <h2 class="caption-title">Tự Tin Tỏa Sáng<br />Mỗi Ngày</h2>
+            <a href="#" class="btn btn-aura">Khám Phá</a>
+          </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </button>
+        <div class="carousel-item">
+          <img
+            src="https://owen.cdn.vccloud.vn/media/codazon/slideshow/t/o/topbanner18.jpg"
+            alt="Fashion 3"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <span class="caption-subtitle">Luxury Label</span>
+            <h2 class="caption-title">Đẳng Cấp<br />Thời Trang Pháp</h2>
+            <a href="#" class="btn btn-aura">Xem Thêm</a>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#heroCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#heroCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
     </div>
 
-  
+    <!-- Sản phẩm khuyến mãi -->
+    <section class="py-5">
+      <div class="container mt-5">
+        <h2 class="section-title">Sản Phẩm Khuyến Mãi</h2>
+        <div class="row mt-4">
+          <!-- Product 1 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="product-card">
+              <span class="product-badge">-30%</span>
+              <div class="product-img-wrapper">
+                <img src="images/ao-so-mi-1.jpeg" alt="Đầm Dạ Hội Kẻ Caro" />
+                <div class="product-actions">
+                  <a href="#" class="action-btn"
+                    ><i class="bi bi-cart-plus"></i
+                  ></a>
+                  <a href="#" class="action-btn"><i class="bi bi-heart"></i></a>
+                  <a href="#" class="action-btn"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="product-category">Áo</div>
+                <a href="#" class="product-name">Áo Dạ Hội Kẻ Caro Phối Ren</a>
+                <div class="product-price-container">
+                  <span class="product-price-old">1,500,000đ</span>
+                  <span class="product-price">1,050,000đ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Product 2 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="product-card">
+              <span class="product-badge">-20%</span>
+              <div class="product-img-wrapper">
+                <img src="images/ao-khoac-1.jpeg" alt="Vest Cổ Điển Nam" />
+                <div class="product-actions">
+                  <a href="#" class="action-btn"
+                    ><i class="bi bi-cart-plus"></i
+                  ></a>
+                  <a href="#" class="action-btn"><i class="bi bi-heart"></i></a>
+                  <a href="#" class="action-btn"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="product-category">Áo Khoác</div>
+                <a href="#" class="product-name"
+                  >Áo Khoác Vest Nam Thiết Kế Cao Cấp</a
+                >
+                <div class="product-price-container">
+                  <span class="product-price-old">3,200,000đ</span>
+                  <span class="product-price">2,560,000đ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Product 3 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="product-card">
+              <span class="product-badge">-15%</span>
+              <div class="product-img-wrapper">
+                <img src="images/ao-so-mi-2.jpeg" alt="Áo Sơ Mi Lụa" />
+                <div class="product-actions">
+                  <a href="#" class="action-btn"
+                    ><i class="bi bi-cart-plus"></i
+                  ></a>
+                  <a href="#" class="action-btn"><i class="bi bi-heart"></i></a>
+                  <a href="#" class="action-btn"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="product-category">Áo</div>
+                <a href="#" class="product-name"
+                  >Áo Sơ Mi Lụa Hàn Quốc Cao Cấp</a
+                >
+                <div class="product-price-container">
+                  <span class="product-price-old">850,000đ</span>
+                  <span class="product-price">722,000đ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Product 4 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="product-card">
+              <span class="product-badge">-40%</span>
+              <div class="product-img-wrapper">
+                <img src="images/quan-jean-1.jpeg" alt="Chân Váy Bút Chì" />
+                <div class="product-actions">
+                  <a href="#" class="action-btn"
+                    ><i class="bi bi-cart-plus"></i
+                  ></a>
+                  <a href="#" class="action-btn"><i class="bi bi-heart"></i></a>
+                  <a href="#" class="action-btn"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="product-category">Quần Jean</div>
+                <a href="#" class="product-name">Quần Jean Ống Suông Cá Tính</a>
+                <div class="product-price-container">
+                  <span class="product-price-old">600,000đ</span>
+                  <span class="product-price">360,000đ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-3">
+          <a href="#" class="btn btn-aura"
+            >Xem Tất Cả Khuyến Mãi <i class="bi bi-arrow-right ms-2"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Danh sách sản phẩm -->
+    <section class="py-5 bg-white">
+      <div class="container">
+        <h2 class="section-title">Danh Sách Sản Phẩm Mới</h2>
+
+        <div class="row mt-4">
+          <!-- Product 5 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="product-card">
+              <span class="product-badge new">New</span>
+              <div class="product-img-wrapper">
+                <img src="images/ao-so-mi-3.jpeg" alt="Đầm Xòe Nữ Tính" />
+                <div class="product-actions">
+                  <a href="#" class="action-btn"
+                    ><i class="bi bi-cart-plus"></i
+                  ></a>
+                  <a href="#" class="action-btn"><i class="bi bi-heart"></i></a>
+                  <a href="#" class="action-btn"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="product-category">Áo</div>
+                <a href="#" class="product-name">Áo Xòe Phối Đai Cao Cấp</a>
+                <div class="product-price-container">
+                  <span class="product-price">1,250,000đ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Product 6 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="product-card">
+              <div class="product-img-wrapper">
+                <img src="images/ao-khoac-2.jpeg" alt="Áo Khoác Blazer Nam" />
+                <div class="product-actions">
+                  <a href="#" class="action-btn"
+                    ><i class="bi bi-cart-plus"></i
+                  ></a>
+                  <a href="#" class="action-btn"><i class="bi bi-heart"></i></a>
+                  <a href="#" class="action-btn"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="product-category">Áo Khoác</div>
+                <a href="#" class="product-name">Áo Khoác Blazer Lịch Lãm</a>
+                <div class="product-price-container">
+                  <span class="product-price">1,890,000đ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Product 7 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="product-card">
+              <span class="product-badge new">New</span>
+              <div class="product-img-wrapper">
+                <img src="images/ao-khoac-3.jpeg" alt="Túi Xách Nữ" />
+                <div class="product-actions">
+                  <a href="#" class="action-btn"
+                    ><i class="bi bi-cart-plus"></i
+                  ></a>
+                  <a href="#" class="action-btn"><i class="bi bi-heart"></i></a>
+                  <a href="#" class="action-btn"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="product-category">Giày Dép</div>
+                <a href="#" class="product-name">Giày Nữ Cổ Thấp Thời Trang</a>
+                <div class="product-price-container">
+                  <span class="product-price">2,100,000đ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Product 8 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="product-card">
+              <div class="product-img-wrapper">
+                <img src="images/quan-jean-2.jpeg" alt="Quần Tây Nam" />
+                <div class="product-actions">
+                  <a href="#" class="action-btn"
+                    ><i class="bi bi-cart-plus"></i
+                  ></a>
+                  <a href="#" class="action-btn"><i class="bi bi-heart"></i></a>
+                  <a href="#" class="action-btn"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="product-category">Quần Jean</div>
+                <a href="#" class="product-name">Quần Jean Nam Ôm Dáng</a>
+                <div class="product-price-container">
+                  <span class="product-price">950,000đ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-3">
+          <a href="#" class="btn btn-aura"
+            >Tải Thêm Sản Phẩm <i class="bi bi-arrow-clockwise ms-2"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Danh mục: Quần Jean -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="section-title">Quần Jean</h2>
+        <div class="row mt-4">
+          <div class="col-lg-3 col-md-6">
+            <div class="product-card">
+              <div class="product-img-wrapper">
+                <img src="images/quan-jean-1.jpeg" alt="Quần Jean" />
+                <div class="product-actions">
+                  <a href="#" class="action-btn"
+                    ><i class="bi bi-cart-plus"></i></a
+                  ><a href="#" class="action-btn"><i class="bi bi-heart"></i></a
+                  ><a href="#" class="action-btn"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="product-category">Quần Jean</div>
+                <a href="#" class="product-name">Quần Jean Rách Gối</a>
+                <div class="product-price-container">
+                  <span class="product-price">650,000đ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="product-card">
+              <div class="product-img-wrapper">
+                <img src="images/quan-jean-2.jpeg" alt="Quần Jean" />
+                <div class="product-actions">
+                  <a href="#" class="action-btn"
+                    ><i class="bi bi-cart-plus"></i></a
+                  ><a href="#" class="action-btn"><i class="bi bi-heart"></i></a
+                  ><a href="#" class="action-btn"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="product-category">Quần Jean</div>
+                <a href="#" class="product-name">Quần Jean Trơn Xanh</a>
+                <div class="product-price-container">
+                  <span class="product-price">550,000đ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="product-card">
+              <div class="product-img-wrapper">
+                <img src="images/quan-jean-3.jpeg" alt="Quần Jean" />
+                <div class="product-actions">
+                  <a href="#" class="action-btn"
+                    ><i class="bi bi-cart-plus"></i></a
+                  ><a href="#" class="action-btn"><i class="bi bi-heart"></i></a
+                  ><a href="#" class="action-btn"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="product-category">Quần Jean</div>
+                <a href="#" class="product-name">Quần Jean Nam Phong Cách</a>
+                <div class="product-price-container">
+                  <span class="product-price">850,000đ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="product-card">
+              <div class="product-img-wrapper">
+                <img src="images/quan-jean-4.jpeg" alt="Quần Jean" />
+                <div class="product-actions">
+                  <a href="#" class="action-btn"
+                    ><i class="bi bi-cart-plus"></i></a
+                  ><a href="#" class="action-btn"><i class="bi bi-heart"></i></a
+                  ><a href="#" class="action-btn"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="product-category">Quần Jean</div>
+                <a href="#" class="product-name">Quần Jean Đen Ôm Dáng</a>
+                <div class="product-price-container">
+                  <span class="product-price">720,000đ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-3">
+          <a href="#" class="btn btn-aura">Xem Tất Cả Quần Jean</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Danh mục: Áo -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="section-title">Áo sơ mi</h2>
+        <div class="row mt-4">
+          <div class="col-lg-3 col-md-6">
+            <div class="product-card">
+              <div class="product-img-wrapper">
+                <img src="images/ao-so-mi-1.jpeg" alt="Áo" />
+                <div class="product-actions">
+                  <a href="#" class="action-btn"
+                    ><i class="bi bi-cart-plus"></i></a
+                  ><a href="#" class="action-btn"><i class="bi bi-heart"></i></a
+                  ><a href="#" class="action-btn"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="product-category">Áo</div>
+                <a href="#" class="product-name">Áo Thun Trắng Cơ Bản</a>
+                <div class="product-price-container">
+                  <span class="product-price">250,000đ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="product-card">
+              <div class="product-img-wrapper">
+                <img src="images/ao-so-mi-2.jpeg" alt="Áo" />
+                <div class="product-actions">
+                  <a href="#" class="action-btn"
+                    ><i class="bi bi-cart-plus"></i></a
+                  ><a href="#" class="action-btn"><i class="bi bi-heart"></i></a
+                  ><a href="#" class="action-btn"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="product-category">Áo</div>
+                <a href="#" class="product-name">Áo Sơ Mi Nam Công Sở</a>
+                <div class="product-price-container">
+                  <span class="product-price">450,000đ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="product-card">
+              <div class="product-img-wrapper">
+                <img src="images/ao-so-mi-3.jpeg" alt="Áo" />
+                <div class="product-actions">
+                  <a href="#" class="action-btn"
+                    ><i class="bi bi-cart-plus"></i></a
+                  ><a href="#" class="action-btn"><i class="bi bi-heart"></i></a
+                  ><a href="#" class="action-btn"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="product-category">Áo</div>
+                <a href="#" class="product-name">Áo Da Phong Cách Biker</a>
+                <div class="product-price-container">
+                  <span class="product-price">1,250,000đ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="product-card">
+              <div class="product-img-wrapper">
+                <img src="images/ao-so-mi-4.jpeg" alt="Áo" />
+                <div class="product-actions">
+                  <a href="#" class="action-btn"
+                    ><i class="bi bi-cart-plus"></i></a
+                  ><a href="#" class="action-btn"><i class="bi bi-heart"></i></a
+                  ><a href="#" class="action-btn"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="product-category">Áo</div>
+                <a href="#" class="product-name">Áo Thun Đen In Họa Tiết</a>
+                <div class="product-price-container">
+                  <span class="product-price">320,000đ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-3">
+          <a href="#" class="btn btn-aura">Xem Tất Cả Áo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Danh mục: Áo Khoác -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="section-title">Khám Phá Áo Khoác</h2>
+        <div class="row mt-4">
+          <div class="col-lg-3 col-md-6">
+            <div class="product-card">
+              <div class="product-img-wrapper">
+                <img src="images/ao-khoac-1.jpeg" alt="Áo Khoác" />
+                <div class="product-actions">
+                  <a href="#" class="action-btn"
+                    ><i class="bi bi-cart-plus"></i></a
+                  ><a href="#" class="action-btn"><i class="bi bi-heart"></i></a
+                  ><a href="#" class="action-btn"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="product-category">Áo Khoác</div>
+                <a href="#" class="product-name">Áo Khoác Dệt Kim Dáng Dài</a>
+                <div class="product-price-container">
+                  <span class="product-price">850,000đ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="product-card">
+              <div class="product-img-wrapper">
+                <img src="images/ao-khoac-2.jpeg" alt="Áo Khoác" />
+                <div class="product-actions">
+                  <a href="#" class="action-btn"
+                    ><i class="bi bi-cart-plus"></i></a
+                  ><a href="#" class="action-btn"><i class="bi bi-heart"></i></a
+                  ><a href="#" class="action-btn"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="product-category">Áo Khoác</div>
+                <a href="#" class="product-name">Áo Khoác Da Biker Phá Cách</a>
+                <div class="product-price-container">
+                  <span class="product-price">2,500,000đ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="product-card">
+              <div class="product-img-wrapper">
+                <img src="images/ao-khoac-3.jpeg" alt="Áo Khoác" />
+                <div class="product-actions">
+                  <a href="#" class="action-btn"
+                    ><i class="bi bi-cart-plus"></i></a
+                  ><a href="#" class="action-btn"><i class="bi bi-heart"></i></a
+                  ><a href="#" class="action-btn"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="product-category">Áo Khoác</div>
+                <a href="#" class="product-name">Áo Khoác Jeans Nam Tính</a>
+                <div class="product-price-container">
+                  <span class="product-price">920,000đ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="product-card">
+              <div class="product-img-wrapper">
+                <img src="images/ao-khoac-4.jpeg" alt="Áo Khoác" />
+                <div class="product-actions">
+                  <a href="#" class="action-btn"
+                    ><i class="bi bi-cart-plus"></i></a
+                  ><a href="#" class="action-btn"><i class="bi bi-heart"></i></a
+                  ><a href="#" class="action-btn"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="product-category">Áo Khoác</div>
+                <a href="#" class="product-name">Áo Khoác Bomber Vintage</a>
+                <div class="product-price-container">
+                  <span class="product-price">1,100,000đ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-3">
+          <a href="#" class="btn btn-aura">Xem Tất Cả Áo Khoác</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer pt-5 pb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <h5 class="footer-title mb-4">QUANG HUY FASHION<span>.</span></h5>
+            <p class="text-white-50">
+              Nơi mang đến những bộ sưu tập thời trang nam nữ hiện đại, thanh
+              lịch và đẳng cấp nhất. Tự tin tỏa sáng cùng phong cách của riêng
+              bạn.
+            </p>
+            <div class="social-icons mt-4">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-youtube"></i></a>
+              <a href="#"><i class="bi bi-tiktok"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 mb-4">
+            <h5 class="footer-title mb-4">Liên Kết</h5>
+            <ul class="list-unstyled footer-links">
+              <li><a href="#">Trang Chủ</a></li>
+              <li><a href="#">Sản Phẩm</a></li>
+              <li><a href="#">Khuyến Mãi</a></li>
+              <li><a href="#">Về Chúng Tôi</a></li>
+              <li><a href="#">Liên Hệ</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="footer-title mb-4">Hỗ Trợ Khách Hàng</h5>
+            <ul class="list-unstyled footer-links">
+              <li><a href="#">Chính Sách Đổi Trả</a></li>
+              <li><a href="#">Hướng Dẫn Mua Hàng</a></li>
+              <li><a href="#">Bảo Mật Thông Tin</a></li>
+              <li><a href="#">Giao Hàng & Nhận Hàng</a></li>
+              <li><a href="#">Câu Hỏi Thường Gặp</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="footer-title mb-4">Liên Hệ</h5>
+            <ul class="list-unstyled footer-contact">
+              <li>
+                <i class="bi bi-geo-alt me-2 text-warning"></i> Bình phú, Vĩnh
+                Long
+              </li>
+              <li>
+                <i class="bi bi-telephone me-2 text-warning"></i> 0123 456 789
+              </li>
+              <li>
+                <i class="bi bi-envelope me-2 text-warning"></i>
+                lienhe@quanghuyfashion.vn
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row mt-4 pt-4 border-top border-secondary">
+          <div class="col-12 text-center text-white-50">
+            <p class="mb-0">&copy; 2026 Quang Huy Fashion.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
